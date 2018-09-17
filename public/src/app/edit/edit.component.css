@@ -1,0 +1,25 @@
+/* all component css */
+
+.component{
+    margin-left: 1%;
+}
+
+a{
+    text-decoration: underline;
+
+}
+
+h6{
+    color: purple;
+    margin-top: 1%;
+}
+
+form{
+    padding: 2%;
+    border: 1px solid black;
+    width: 30%;
+}
+
+.btn{
+    margin: 2%;
+}

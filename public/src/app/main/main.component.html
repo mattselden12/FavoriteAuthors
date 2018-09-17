@@ -1,0 +1,26 @@
+<div class="component">
+  <a [routerLink]="['/new']">Add an author</a>
+  <h6>We have quotes by:</h6>
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <th>Author</th>
+        <th>Actions available</th>
+      </tr>
+      <tr>
+        <td>Bill Bryson</td>
+        <td>
+          <button [routerLink]="['/edit/1']" type="button" class="btn btn-edit">Edit</button>
+          <button type="button" class="btn btn-delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Ada Lovelace</td>
+        <td>
+          <button [routerLink]="['/edit/1']" type="button" class="btn btn-edit">Edit</button>
+          <button type="button" class="btn btn-delete">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

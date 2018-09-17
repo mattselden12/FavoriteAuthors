@@ -1,0 +1,66 @@
+.component{
+    margin-left: 1%;
+}
+
+a{
+    text-decoration: underline;
+
+}
+
+h6{
+    color: purple;
+    margin-top: 1%;
+}
+
+.table-striped td{
+    border: 2px solid black;
+    color: purple;
+}
+
+.table-striped th{
+    border: 2px solid black;
+    color: white;
+}
+
+table{
+    width: 50%;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #D3D3D3;
+}
+
+.btn-edit {
+    background-color: hsl(41, 85%, 10%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecaa1c", endColorstr="#2f2103");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ecaa1c), to(#2f2103));
+    background-image: -moz-linear-gradient(top, #ecaa1c, #2f2103);
+    background-image: -ms-linear-gradient(top, #ecaa1c, #2f2103);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ecaa1c), color-stop(100%, #2f2103));
+    background-image: -webkit-linear-gradient(top, #ecaa1c, #2f2103);
+    background-image: -o-linear-gradient(top, #ecaa1c, #2f2103);
+    background-image: linear-gradient(#ecaa1c, #2f2103);
+    border-color: #2f2103 #2f2103 hsl(41, 85%, -0.5%);
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.69);
+    -webkit-font-smoothing: antialiased;
+    margin-right: 2%;
+}
+
+.btn-delete {
+    background-color: hsl(312, 33%, 15%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ae5f9e", endColorstr="#32192d");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ae5f9e), to(#32192d));
+    background-image: -moz-linear-gradient(top, #ae5f9e, #32192d);
+    background-image: -ms-linear-gradient(top, #ae5f9e, #32192d);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ae5f9e), color-stop(100%, #32192d));
+    background-image: -webkit-linear-gradient(top, #ae5f9e, #32192d);
+    background-image: -o-linear-gradient(top, #ae5f9e, #32192d);
+    background-image: linear-gradient(#ae5f9e, #32192d);
+    border-color: #32192d #32192d hsl(312, 33%, 5.5%);
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.62);
+    -webkit-font-smoothing: antialiased;
+}
