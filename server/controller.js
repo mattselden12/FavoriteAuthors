@@ -2,6 +2,7 @@ const Author = require("./models.js");
 module.exports = {
 	allAuthors: (req,res)=> Author
 						.find({})
+						.sort('field aname')
 						.then(data=>res.json(
 						{status: "good", content: data}
 						))

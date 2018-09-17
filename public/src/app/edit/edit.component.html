@@ -1,4 +1,4 @@
-<div class="component">
+<div *ngIf="found == true" class="component">
   <a [routerLink]="['/']">Home</a>
   <h6>Edit this author</h6>
   <form (submit)="updateAuthor()">
@@ -10,4 +10,9 @@
     <button [routerLink]="['/']" class="btn btn-primary">Cancel</button>
     <button class="btn btn-primary">Submit</button>
   </form>
+</div>
+
+<div *ngIf="found == false" class="component">
+  <h4>We're sorry, but we could not find the author you are looking for. Would you like to add this author to our database?</h4>
+  <a [routerLink]="['/new']">Add an author</a>
 </div>

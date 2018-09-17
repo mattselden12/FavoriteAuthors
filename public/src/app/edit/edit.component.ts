@@ -11,6 +11,7 @@ export class EditComponent implements OnInit {
   authorId: String;
   editedAuthor: Object;
   errors: any[];
+  found: Boolean;
 
   constructor(
     private _httpService: HttpService,
@@ -19,6 +20,7 @@ export class EditComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.found = true;
     this.editedAuthor={aname: ""};
     this._route.params.subscribe((params: Params) => {
       this.authorId = params['id'];
@@ -33,6 +35,7 @@ export class EditComponent implements OnInit {
         this.editedAuthor = {aname: data['content']['aname']};
         console.log("fetched");
       } else{
+        this.found = false;
         console.log(data['content']);
       }
     })
