@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { NewComponent } from './new/new.component';
 import { EditComponent } from './edit/edit.component';
+import { HttpClientModule } from '@angular/common/http';
 import { HttpService } from './http.service';
 
 @NgModule({
@@ -17,6 +18,7 @@ import { HttpService } from './http.service';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule
   ],

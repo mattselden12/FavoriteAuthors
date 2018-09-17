@@ -17,9 +17,13 @@ h6{
 form{
     padding: 2%;
     border: 1px solid black;
-    width: 30%;
+    width: 40%;
 }
 
 .btn{
     margin: 2%;
+}
+
+p{
+    color: red;
 }

@@ -1,12 +1,13 @@
 <div class="component">
   <a [routerLink]="['/']">Home</a>
   <h6>Add a new author:</h6>
-  <form>
+  <form (submit)="createAuthor()">
+    <p *ngFor="let error of errors"> {{ error }} </p>
     <div class="form-group">
       <label>Name:</label>
-      <input type="text" class="form-control" value="Leslie Jones">
-      <button [routerLink]="['/']" class="btn btn-primary">Cancel</button>
-      <button class="btn btn-primary">Submit</button>
+      <input type="text" class="form-control" name="name" [(ngModel)]="newAuthor.aname">
     </div>
+    <button [routerLink]="['/']" class="btn btn-primary">Cancel</button>
+    <button class="btn btn-primary">Submit</button>
   </form>
 </div>

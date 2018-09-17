@@ -7,18 +7,11 @@
         <th>Author</th>
         <th>Actions available</th>
       </tr>
-      <tr>
-        <td>Bill Bryson</td>
+      <tr *ngFor="let author of allAuthors">
+        <td>{{ author.aname }}</td>
         <td>
-          <button [routerLink]="['/edit/1']" type="button" class="btn btn-edit">Edit</button>
-          <button type="button" class="btn btn-delete">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <td>Ada Lovelace</td>
-        <td>
-          <button [routerLink]="['/edit/1']" type="button" class="btn btn-edit">Edit</button>
-          <button type="button" class="btn btn-delete">Delete</button>
+          <button [routerLink]="['/edit/'+author._id]" type="button" class="btn btn-edit">Edit</button>
+          <button (click)="deleteAuthor(author._id)" type="button" class="btn btn-delete">Delete</button>
         </td>
       </tr>
     </tbody>

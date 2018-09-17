@@ -25,7 +25,7 @@ module.exports = {
 						{status: "bad", content: errs}
 						)),
 	updateAuthor: (req,res)=> Author
-						.findByIdAndUpdate(req.params.id, req.body, {new:true})
+						.findByIdAndUpdate(req.params.id, req.body, {new:true, runValidators: true})
 						.then(data=>res.json(
 						{status: "good", content: data}
 						))
