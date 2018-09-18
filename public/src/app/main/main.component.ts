@@ -26,9 +26,13 @@ export class MainComponent implements OnInit {
     })
   }
   deleteAuthor(authorid){
+    for (let i = 0; i < this.allAuthors.length; i++) {
+      if (this.allAuthors[i]['_id'] == authorid) {
+        this.allAuthors.splice(i,1);
+      }
+    }
     let obs = this._httpService.deleteAuthor(authorid);
     obs.subscribe(data=>console.log(data));
-    this.fetchAuthors();
   }
 
 }

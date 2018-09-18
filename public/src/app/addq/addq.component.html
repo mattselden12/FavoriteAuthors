@@ -1,0 +1,18 @@
+<div class="component">
+  <a [routerLink]="['/']">Home</a>
+  <h6>Provide a quote by {{ thisAuthor.aname }}:</h6>
+  <p *ngFor="let error of errors"> {{ error }} </p>
+  <form (submit)="submitQuote()">
+    <div class="form-group">
+      <label style="color:black;">Quote:</label>
+      <input type="text" class="form-control" name="name" 
+      required 
+      minlength="3" 
+      [(ngModel)]="newquote.quote" 
+      #newquote="ngModel"
+      />
+    </div>
+    <button [routerLink]="['/quotes/'+authorId]" class="btn btn-primary">Cancel</button>
+    <button type="submit" class="btn btn-primary" *ngIf="newquote.valid">Submit</button>
+  </form>
+</div>

@@ -7,5 +7,6 @@ module.exports = function(app){
 	app.post("/authors", api.createAuthor);
 	app.put("/authors/:id", api.updateAuthor);
 	app.delete("/authors/:id", api.deleteAuthor);
+	app.post("/api/quotes/:id", api.addQuote);
 	return app;
 }

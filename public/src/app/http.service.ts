@@ -23,4 +23,7 @@ export class HttpService {
   thisAuthor(authorid){
     return this._http.get(`/authors/${authorid}`);
   }
+  addQuote(quote, authorid){
+    return this._http.post(`/api/quotes/${authorid}`, quote);
+  }
 }

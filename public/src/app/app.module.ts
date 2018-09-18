@@ -8,13 +8,17 @@ import { NewComponent } from './new/new.component';
 import { EditComponent } from './edit/edit.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpService } from './http.service';
+import { QuotesComponent } from './quotes/quotes.component';
+import { AddqComponent } from './addq/addq.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     NewComponent,
-    EditComponent
+    EditComponent,
+    QuotesComponent,
+    AddqComponent
   ],
   imports: [
     BrowserModule,

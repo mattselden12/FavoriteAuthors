@@ -40,5 +40,26 @@ module.exports = {
 						))
 						.catch(errs=>res.json(
 						{status: "bad", content: errs}
+						)),
+	
+	addQuote: (req,res) => Author.findById(req.params.id)
+						.then(data=>{
+							let curAuth = data;
+							curAuth.quotes.push(req.body);
+							curAuth.save(function(err,data){
+								if(err){
+									console.log(err);
+									res.json({status:"bad", content: err})
+								}
+								else{
+									console.log(data);
+									console.log(curAuth);
+									res.json({status: "good", content: data})
+								
+								}
+							})
+						})
+						.catch(errs=>res.json(
+							{status:"bad", content: data}
 						))
 }
