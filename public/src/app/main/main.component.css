@@ -23,7 +23,7 @@ h6{
 }
 
 table{
-    width: 40%;
+    width: 60%;
 }
 
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
@@ -84,4 +84,8 @@ table{
     -webkit-font-smoothing: antialiased;
     width: 120px;
     margin-right: 2%;
+}
+
+.buttons{
+    width: 500px;
 }

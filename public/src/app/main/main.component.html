@@ -5,11 +5,11 @@
     <tbody>
       <tr>
         <th>Author</th>
-        <th>Actions available</th>
+        <th class="buttons">Actions available</th>
       </tr>
       <tr *ngFor="let author of allAuthors">
         <td>{{ author.aname }}</td>
-        <td>
+        <td class="buttons">
           <button [routerLink]="['/quotes/'+author._id]" class="btn btn-view">View quotes</button>
           <button [routerLink]="['/edit/'+author._id]" type="button" class="btn btn-edit">Edit</button>
           <button (click)="deleteAuthor(author._id)" type="button" class="btn btn-delete">Delete</button>

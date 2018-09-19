@@ -8,12 +8,12 @@
       <tr>
         <th class="quotespace">Quote</th>
         <th>Votes</th>
-        <th>Actions available</th>
+        <th class="buttons">Actions available</th>
       </tr>
       <tr *ngFor="let quote of thisAuthor.quotes">
         <td class="quotespace">"{{ quote.quote }}"</td>
         <td>{{ quote.votes }}</td>
-        <td>
+        <td class="buttons">
           <button (click)="voteUp(quote._id)" class="btn btn-view">Vote up</button>
           <button (click)="voteDown(quote._id)" type="button" class="btn btn-edit">Vote down</button>
           <button (click)="deleteQuote(quote._id)" type="button" class="btn btn-delete">Delete</button>

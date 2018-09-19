@@ -23,7 +23,7 @@ h6{
 }
 
 table{
-    width: 50%;
+    width: 60%;
 }
 
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
@@ -92,4 +92,8 @@ table{
 
 .quotespace{
     width: 300px;
+}
+
+.buttons{
+    width: 500px;
 }
